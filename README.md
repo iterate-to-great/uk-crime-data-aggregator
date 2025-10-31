@@ -93,10 +93,10 @@ The aggregated output CSV contains the following columns in order:
 ### Sample Output
 
 ```csv
-postcode,crime_type,month,longitude,latitude
-SW1A 1AA,Burglary,2024-01,-0.127758,51.507351
-E1 6AN,Vehicle crime,2024-01,-0.075268,51.518847
-M1 1AE,Theft from the person,2024-02,-2.238156,53.477245
+postcode,crime_type,year,month,longitude,latitude
+SW1A 1AA,Burglary,2024,01,-0.127758,51.507351
+E1 6AN,Vehicle crime,2024,01,-0.075268,51.518847
+M1 1AE,Theft from the person,2024,02,-2.238156,53.477245
 ```
 
 ## Development
@@ -106,10 +106,11 @@ M1 1AE,Theft from the person,2024-02,-2.238156,53.477245
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+Please make sure the commit message contains the full ticket id (e.g. `iterate-to-great/uk-crime-data-aggregator/#{ticket-number}`).
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/{ticket-number}-AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature #{ticket-number}'`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature iterate-to-great/uk-crime-data-aggregator/#{ticket-number}'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request (Please add the ticket number in the description e.g. `Make a big change #123`)
 
