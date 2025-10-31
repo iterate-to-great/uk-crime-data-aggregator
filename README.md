@@ -14,6 +14,41 @@ This project processes crime data obtained from [data.police.uk](https://data.po
 - 🗺️ Preserve geographic coordinates (Longitude, Latitude)
 - 📁 Export results to a clean, structured CSV format
 
+## Getting Started
+
+### Prerequisites
+
+- Python 3.10 or higher
+- pip (Python package installer)
+
+### Installation
+
+Install the package in development mode with all dependencies:
+```bash
+pip install -e ".[dev]"
+```
+
+This will install:
+- The project as an editable package
+- pytest for testing
+- pytest-cov for code coverage
+
+### Running Tests
+
+Run all tests:
+```bash
+pytest
+```
+
+Run tests with coverage report:
+```bash
+pytest --cov=src --cov-report=term-missing
+```
+
+Run a specific test file:
+```bash
+pytest tests/test_hello.py -v
+```
 
 ## Usage
 
